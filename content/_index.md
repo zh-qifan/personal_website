@@ -4,6 +4,11 @@ title: Home
 
 {{<figure src="https://animalcorner.org/wp-content/uploads/2020/07/Japanese-Dog-Breeds-Akita.jpg" title="This is me, which is me (我就是我，不一样的烟火)" width="450">}}
 
-I was born on Mars in 2011. Four days after my birth, I moved to the Earth with my family. There, what I saw shocked me greatly. 
+I am currently a fourth-year undergraduate student from Nanjing University, majoring in Statistics. I am interested in all kinds of sports from soccer to swimming, from table tennis to tennis. Also, I am a big fan of PSG and Neymar JR. I am currently taking courses in PDE, Stochastic Process and Advanced Probability Theory. I decided to build this personal website on Sep 28, 2022 after read the passage of [Hongtao Hao](https://cosx.org/2022/09/my-phd-app/). Thus this website is similar to [his](https://hongtaoh.com/) now. 
 
-这是我 2011 年在火星出生后第三天的照片。第四天，我被运往地球，在那里看到的东西把我吓傻了。
+Another thing is that my academic interests lie in Data Science and Machine Learning. 
+
+这是张启帆的个人主页。我目前是南京大学数学系统计学专业的大四本科生。搭建个人主页的想法是2022年9月28日拜读了
+[郝鸿涛的PhD申请经历](https://cosx.org/2022/09/my-phd-app/)和他的主页中引用的
+>除非你记忆力超群，否则凡是没有写下来的东西你很快就会忘，而你忘记的事情跟没做也没什么区别。-[谢益辉](https://yihui.org/)
+后有的。我是内马尔的粉丝，也是大巴黎和巴西队的粉丝。今年的世界杯冠军属于巴西队。

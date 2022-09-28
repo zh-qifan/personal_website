@@ -41,7 +41,7 @@ posts = "/posts/:year/:month/:day/:slug/"
     weight = 3
 
 [params]
-    description = "Peronal website of Your Name"
+    description = "Peronal website of Qifan ZHang"
     homeText = "You just need a Hugo blog from scratch"
     # Please make sure `blogDirNmae` matches the name used in `menu` above:
     blogDirName = "posts"
@@ -53,11 +53,11 @@ posts = "/posts/:year/:month/:day/:slug/"
     # Edit by yourself:
     GithubEdit = "https://github.com/zh-qifan/zh-qifan.github.io/edit/master/content/"
     copyright = "&copy;"
-    copyrightYear = "2020-2021"
+    copyrightYear = "2021-2022"
     # Edit by yourself:
-    GithubRepo = "https://github.com/USERNAME/REPONAME"
+    GithubRepo = "https://github.com/zh-qifan/zh-qifan.github.io"
     # Edit by yourself:
-    ContentSource = "https://raw.githubusercontent.com/USERNAME/REPONAME/master/content/" 
+    ContentSource = "https://raw.githubusercontent.com/zh-qifan/zh-qifan.github.io/master/content/" 
 
 [params.logo]
   # Change the logo picture as your prefer:

@@ -1,7 +1,6 @@
 ---
-title: "中文页面"
+title: "中文博客"
 type : nolisting
 ---
 
-### 中文页面测试
 
