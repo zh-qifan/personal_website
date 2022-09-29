@@ -6,8 +6,7 @@ type : list-single
 ## Qifan Zhang
 
 Nanjing University\
-Nanjing University Xianlin Campus/
-Nanjing, China
+Nanjing University Xianlin Campus, Nanjing, China
 
 Email: 191840336@smail.nju.edu.cn
 
@@ -15,7 +14,7 @@ Email: 191840336@smail.nju.edu.cn
 Expected 2023, BS in Statistics, Nanjing University
 
 ### Scholarships & Awards
-2022, Mathematical Contest in Modeling (MCM)\
+2022, Meritorious Winner in Mathematical Contest in Modeling (MCM)\
 2021, Cheung Kong Graduate School of Business Scholarship\
 2021, Math Honor Program Scholarship\
 2020, Academic Scholarship\
