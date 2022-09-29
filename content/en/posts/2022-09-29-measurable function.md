@@ -5,16 +5,13 @@ author: Qifan Zhang
 slug: mistake-composition-measurable-function
 draft: false
 toc: false
+math: true
 categories:
   - test
 tags:
   - article
   - English
 ---
-
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 In abstract measure theory, we have one proposition about the composition of measurable function
 > Suppose $(\Omega_1,\Sigma_1)$, $(\Omega_2,\Sigma_2)$ and $(\Omega_3,\Sigma_3)$ are measurale spaces, and $f:(\Omega_1,\Sigma_1) \rightarrow (\Omega_2,\Sigma_2)$ and $g:(\Omega_2,\Sigma_2) \rightarrow (\Omega_3,\Sigma_3)$ are measurable functions. Then $g\circ f$ is a measurable function from $(\Omega_1,\Sigma_1)$ to $(\Omega_3,\Sigma_3)$.
@@ -31,3 +28,5 @@ In $\mathbb{R}$, its topology is the collection of all open interval. Thus the a
 The mistake is clear now. The $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ and $(\mathbb{R}, \mathcal{L})$ are not the same thing! This does not satisfy the premise of the proposition! Since $\mathcal{L}$ is a complete $\sigma$-field, it can hide something nasty into any zero measure set. Then the "normal" $\mathcal{B}(\mathbb{R})$ makes it reappear in front of us. 
 
 This mistake confuse me for about 30 minutes. I think next time I should write down every measurable space I use to avoid problems like this. 
+
+(The mathjax problem is fixed thanks to https://note.qidong.name/2018/03/hugo-mathjax/)
