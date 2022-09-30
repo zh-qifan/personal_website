@@ -12,6 +12,10 @@ tags:
   - article
   - English
 ---
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 
 In abstract measure theory, we have one proposition about the composition of measurable function
 > Suppose $(\Omega_1,\Sigma_1)$, $(\Omega_2,\Sigma_2)$ and $(\Omega_3,\Sigma_3)$ are measurale spaces, and $f:(\Omega_1,\Sigma_1) \rightarrow (\Omega_2,\Sigma_2)$ and $g:(\Omega_2,\Sigma_2) \rightarrow (\Omega_3,\Sigma_3)$ are measurable functions. Then $g\circ f$ is a measurable function from $(\Omega_1,\Sigma_1)$ to $(\Omega_3,\Sigma_3)$.
