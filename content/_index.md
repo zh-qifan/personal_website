@@ -2,9 +2,7 @@
 title: Home
 ---
 
-{{<figure src="https://animalcorner.org/wp-content/uploads/2020/07/Japanese-Dog-Breeds-Akita.jpg" title="This is me, which is me (我就是我，不一样的烟火)" width="450">}}
-
-I am currently a fourth-year undergraduate student from Nanjing University, majoring in Statistics. I am interested in all kinds of sports from soccer to swimming, from table tennis to tennis. Also, I am a big fan of PSG and Neymar JR. I am currently taking courses in PDE, Stochastic Process and Advanced Probability Theory. I decided to build this personal website on Sep 28, 2022 after read the passage of [Hongtao Hao](https://cosx.org/2022/09/my-phd-app/). Thus this website is similar to [his](https://hongtaoh.com/) now. 
+I am currently a fourth-year undergraduate student from Nanjing University, majoring in Statistics. I am interested in all kinds of sports from soccer to swimming, from table tennis to tennis. Also, I am a big fan of PSG and Neymar JR. I am currently taking courses in PDE, Stochastic Process and Advanced Probability Theory. I decided to build this personal website on Sep 28, 2022 after reading the passage of [Hongtao Hao](https://cosx.org/2022/09/my-phd-app/). Thus this website is similar to [his](https://hongtaoh.com/) now. 
 
 Another thing is that my academic interests lie in Data Science and Machine Learning. 
 
