@@ -1,6 +1,6 @@
 baseURL = "https://zh-qifan.github.io/"
 languageCode = "en-us"
-title = "Hugo-HT"
+title = "张启帆：Qifan Zhang"
 theme = "hugo-ht"
 footnotereturnlinkcontents = "↩"
 enableRobotsTXT = true
