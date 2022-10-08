@@ -1,6 +1,6 @@
 baseURL = "https://zh-qifan.github.io/"
 languageCode = "en-us"
-title = "Hugo-HT"
+title = "Qifan Zhang"
 theme = "hugo-ht"
 footnotereturnlinkcontents = "↩"
 enableRobotsTXT = true
@@ -41,7 +41,7 @@ posts = "/posts/:year/:month/:day/:slug/"
     weight = 3
 
 [params]
-    description = "Peronal website of Qifan ZHang"
+    description = "Peronal website of Qifan Zhang"
     homeText = "You just need a Hugo blog from scratch"
     # Please make sure `blogDirNmae` matches the name used in `menu` above:
     blogDirName = "posts"
