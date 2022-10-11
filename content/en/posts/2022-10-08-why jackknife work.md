@@ -50,8 +50,8 @@ T\_{n-1, i} - T\_n = g'(\bar{X}\_n)(\bar{X}\_{n-1,i} - \bar{X}\_n) + \frac{1}{2}
 Then 
 \begin{equation}
 \begin{split}
-b\_{JACK} &= (n - 1)(\bar{T}\_{n-1} - T\_n) \\\
-&= \frac{n-1}{2n}\sum\_{i=1}^n (\bar{X}\_{n-1,i} - \bar{X}\_n)^Tg''(\xi\_i)(\bar{X}_{n-1,i} - \bar{X}_n) \\\
+b\_{JACK} &= (n - 1)(\bar{T}\_{n-1} - T\_n) \\\\\
+&= \frac{n-1}{2n}\sum\_{i=1}^n (\bar{X}\_{n-1,i} - \bar{X}\_n)^Tg''(\xi\_i)(\bar{X}_{n-1,i} - \bar{X}_n) \\\\\
 &= \frac{1}{2n(n-1)}\sum\_{i=1}^n (X_i - \bar{X}\_n)^Tg''(\xi\_i)(X_i - \bar{X}_n)
 \end{split}
 \end{equation}
@@ -99,11 +99,11 @@ T\_n = \alpha^{(0)} + \frac{1}{n}\sum_{i} \alpha_i^{(1)} + \frac{1}{n^2} \sum_{i
 where 
 \begin{equation}
 \begin{split}
-\alpha^{(0)} &= ET\_n \\\
-\alpha_{i}^{(1)} &= n\[E(T\_n|X\_i) - \mu\] \\\
-\alpha_{i\_1i\_2}^{(2)} &= n^2\[E(T\_n|X\_{i\_1}, X\_{i\_2}) - E(T\_n|X\_{i\_1}) - E(T\_n|X\_{i\_2}) + \mu\] \\\
-&\cdots \\\
-\alpha_{i\_1i\_2\cdots i\_k}^{(k)} &= n^k\[E(T\_n|X\_{i\_1}, X\_{i\_2}, \cdots, X\_{i\_k}) -  \sum_{s=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s}) + \\\
+\alpha^{(0)} &= ET\_n \\\\\
+\alpha_{i}^{(1)} &= n\[E(T\_n|X\_i) - \mu\] \\\\\
+\alpha_{i\_1i\_2}^{(2)} &= n^2\[E(T\_n|X\_{i\_1}, X\_{i\_2}) - E(T\_n|X\_{i\_1}) - E(T\_n|X\_{i\_2}) + \mu\] \\\\\
+&\cdots \\\\\
+\alpha_{i\_1i\_2\cdots i\_k}^{(k)} &= n^k\[E(T\_n|X\_{i\_1}, X\_{i\_2}, \cdots, X\_{i\_k}) -  \sum_{s=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s}) + \\\\\
 &\ \ \sum_{s,t=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s,t}) + \cdots + (-1)^k\mu
 \end{split}
 \end{equation}
