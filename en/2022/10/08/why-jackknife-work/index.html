@@ -22,7 +22,7 @@ T_{n-1, i} - T_n = g'(\bar{X}_n)(\bar{X}_{n-1,i} - \bar{X}_n) + \frac{1}{2}(\bar
 \end{equation}</p><p>Then
 \begin{equation}
 \begin{split}
-b_{JACK} &= (n - 1)(\bar{T}_{n-1} - T_n) \<br>&= \frac{n-1}{2n}\sum_{i=1}^n (\bar{X}_{n-1,i} - \bar{X}_n)^Tg''(\xi_i)(\bar{X}_{n-1,i} - \bar{X}_n) \<br>&= \frac{1}{2n(n-1)}\sum_{i=1}^n (X_i - \bar{X}_n)^Tg''(\xi_i)(X_i - \bar{X}_n)
+b_{JACK} &= (n - 1)(\bar{T}_{n-1} - T_n) \\<br>&= \frac{n-1}{2n}\sum_{i=1}^n (\bar{X}_{n-1,i} - \bar{X}_n)^Tg''(\xi_i)(\bar{X}_{n-1,i} - \bar{X}_n) \\<br>&= \frac{1}{2n(n-1)}\sum_{i=1}^n (X_i - \bar{X}_n)^Tg''(\xi_i)(X_i - \bar{X}_n)
 \end{split}
 \end{equation}</p><p>where $\bar{X}_{n-1,i}$ is the mean value of $n-1$ observations without the ith one. Since
 $\xi_i \rightarrow \mu $ as $n \rightarrow \infty$, we can show that $b_{JACK} \rightarrow E[(\bar{X}_n -\mu)^Tg''(\mu)(\bar{X}_n -\mu)]$. By $E[g'(\mu) (\bar{X}_n -\mu)] = 0$, we actually prove that the jackknife bias estimator is a consistent estimator of the first two order of the true bias.</p><p>From the above discussion, jackknife bias estimation works well for most estimators i.e. estimators have the form $g(\bar{X}_n)$ as $n\rightarrow \infty$. In fact, for a more general class of statistics named functional statistics<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup> (e.g. quantile), we have similar result in the consistency of jackknife bias estimation.</p><p>Jackknife method is popular for its variance estimation, which was first proposed by Tukey in 1958. In fact, the name &ldquo;jackknife&rdquo; was first proposed by Tukey because, like a physical jack-knife (a compact folding knife), it is a rough-and-ready tool that can improvise a solution for a variety of problems even though specific problems may be more efficiently solved with a purpose-designed tool<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>. By doing jackknife bias reduction, i.e. subtracting bias estimation from the original estimator $T_n$, we have
@@ -54,7 +54,7 @@ T_n = \alpha^{(0)} + \frac{1}{n}\sum_{i} \alpha_i^{(1)} + \frac{1}{n^2} \sum_{i_
 \end{equation}<br>where
 \begin{equation}
 \begin{split}
-\alpha^{(0)} &= ET_n \<br>\alpha_{i}^{(1)} &= n[E(T_n|X_i) - \mu] \<br>\alpha_{i_1i_2}^{(2)} &= n^2[E(T_n|X_{i_1}, X_{i_2}) - E(T_n|X_{i_1}) - E(T_n|X_{i_2}) + \mu] \<br>&\cdots \<br>\alpha_{i_1i_2\cdots i_k}^{(k)} &= n^k[E(T_n|X_{i_1}, X_{i_2}, \cdots, X_{i_k}) - \sum_{s=1}^k E(T_n|(X_{i_j})_{j\neq s}) + \<br>&\ \ \sum_{s,t=1}^k E(T_n|(X_{i_j})_{j\neq s,t}) + \cdots + (-1)^k\mu
+\alpha^{(0)} &= ET_n \\<br>\alpha_{i}^{(1)} &= n[E(T_n|X_i) - \mu] \\<br>\alpha_{i_1i_2}^{(2)} &= n^2[E(T_n|X_{i_1}, X_{i_2}) - E(T_n|X_{i_1}) - E(T_n|X_{i_2}) + \mu] \\<br>&\cdots \\<br>\alpha_{i_1i_2\cdots i_k}^{(k)} &= n^k[E(T_n|X_{i_1}, X_{i_2}, \cdots, X_{i_k}) - \sum_{s=1}^k E(T_n|(X_{i_j})_{j\neq s}) + \\<br>&\ \ \sum_{s,t=1}^k E(T_n|(X_{i_j})_{j\neq s,t}) + \cdots + (-1)^k\mu
 \end{split}
 \end{equation}
 and these terms have zero expectation and mutually uncorrelated. This decomposition is powerful since it doesn&rsquo;t assume independence on the original observations. Intuitively, it decomposes an estimator into the main effect, mutual effect and high order effect of observations. One just need to plug in the definition of $\alpha^{(i)}$ into the decomposition to verfify it. Notice that if we assume our observations are i.i.d., we have
