@@ -5,7 +5,7 @@ date: 2022-10-08
 
 I am currently a fourth-year undergraduate student from Nanjing University, majoring in Statistics. I plan to pursue a master's degree in Statistics or Data Science to study more novel data science techniques and prepare myself for further research. 
 
-I am interested in all kinds of sports and I am a big fan of PSG and Neymar JR. I am taking courses in PDE, Stochastic Process and Advanced Probability Theory this semester and working on my bachelor's degree dissertation.
+I am interested in all kinds of sports and I am a big fan of PSG and Neymar JR. This semester, I am taking courses in PDE, Stochastic Process and Advanced Probability Theory and working on my bachelor's degree dissertation.
 
 I decided to build this personal website on Sep 28, 2022 after reading the passage of [Hongtao Hao](https://cosx.org/2022/09/my-phd-app/). 
 

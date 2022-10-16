@@ -15,7 +15,9 @@ tags:
 
 ### 1 Errno 10054
 >fatal: unable to access 'https://github.com/…': OpenSSL SSL_read: Connection was reset, errno 10054
-原因是因为服务器的SSL证书没有经过第三方机构的签署[^1]，解决方法为解除SSL验证：
+原因是因为服务器的SSL证书没有经过第三方机构的签署[^1]
+
+解决方法为解除SSL验证：
 >git config --global http.sslVerify false
 
 [^1]: https://blog.csdn.net/weixin_44217936/article/details/124716629

@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
 type : list-single
-date: 2022-10-08
+date: 2022-10-16
 ---
 
 ## Qifan Zhang
@@ -12,7 +12,7 @@ Nanjing University Xianlin Campus, Nanjing, China
 Email: 191840336@smail.nju.edu.cn
 
 ### Education
-Expected 2023, BS in Statistics, Nanjing University
+Expected June 2023, BS in Statistics, Nanjing University
 
 ### Scholarships & Awards
 2022, Meritorious Winner in Mathematical Contest in Modeling (MCM)\
@@ -26,7 +26,7 @@ Expected 2023, BS in Statistics, Nanjing University
 2020, Contemporary Undergraduate Mathematical Contest in Modeling, The Third Price in Jiangsu Province
 
 ### Professional Experience
-Jun 2022 – Aug 2022, Huawei, Product Data Engineer Summer Intern, Shenzhen\
+June 2022 – Aug 2022, Huawei, Product Data Engineer Summer Intern, Shenzhen\
 Aug 2021 – Nov 2021, Xishi Technologies, Quantitative Researcher Intern, Remote
 
 ### Research Experience
