@@ -11,6 +11,8 @@ categories:
   - statistics
 tags:
   - article
+math:
+  enable: true
 ---
 
 In the Advanced Mathematical Statistics course in Spring AY21/22, we studied two popular model-free computational methods used in estimation: Jackknife and Bootstrap. Given $n$ observations $X_1,\cdots, X_n$ and a statistics $T_n$ as the estimation for unknown parameter $\theta$ (e.g. mean value and variance), the Jackknife method for bias estimation formulates as follows,
