@@ -20,13 +20,13 @@ Student Exchange Program | 2021 Aug. - 2021 Dec.
 
 ## Experience
 ***Research Assistant, Singapore Management University***\
-Nov. 2021 - Present
+Nov. 2021 – Present
 - Scraped data related to job, school, and house location in Singapore using **Google APIs and Python**.
 - Developed **XGBoost/Random Forests/LSTM** to predict house price in Singapore.
 - Performed residual analysis and adjusted the criterion for clustering similar houses.
 
 ***Product Data Engineer Summer Intern, Huawei***\
-June 2022 - Aug. 2022
+June 2022 – Aug. 2022
 - Analyzed WIFI connection and App usage data to build social network using **SQL/Python**.
 - Deployed **LightGBM/DNN/LR** models to generate persona tags on family role/advertisement click.
 - Optimized data synchronization between different platform like MLOps/DataOps.
@@ -39,7 +39,7 @@ Aug. 2021 – Nov. 2021
 - Generated and analyzed 16+ DC-based indicators. 
 
 ***Team Captain, Soccer Team in Department of Mathematics, Nanjing University***\
-2020 Sept. - 2021 June
+Sept. 2020 – June 2021
 - Won the **championship** of Nanjing University Soccer Premier League.
 
 ## Scholarships & Awards
