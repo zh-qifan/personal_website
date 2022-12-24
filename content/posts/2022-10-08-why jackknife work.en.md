@@ -11,8 +11,6 @@ categories:
   - statistics
 tags:
   - article
-math:
-  enable: true
 ---
 
 In the Advanced Mathematical Statistics course in Spring AY21/22, we studied two popular model-free computational methods used in estimation: Jackknife and Bootstrap. Given $n$ observations $X_1,\cdots, X_n$ and a statistics $T_n$ as the estimation for unknown parameter $\theta$ (e.g. mean value and variance), the Jackknife method for bias estimation formulates as follows,
@@ -30,10 +28,8 @@ Then we can verify that by subtracting $b\_{JACK}$ from the original $T$, we can
 T\_n - \theta = g^{\prime}(\mu) (\bar{X}_n -\mu) + \frac{1}{2}(\bar{X}_n -\mu)^Tg^{\prime\prime}(\mu)(\bar{X}_n -\mu) + R\_n
 \end{equation} 
 where $R_n=O\_{p}(n^{-2})$[^3] and
-$$
-\begin{aligned} E\[g^{\prime}(\mu) (\bar{X}_n -\mu)\] &= 0\\\\\
-E\[(\bar{X}_n -\mu)^Tg^{\prime\prime}(\mu)(\bar{X}_n -\mu)\] &= O(n^{-1}) \end{aligned}
-$$
+$$ E\[g^{\prime}(\mu) (\bar{X}_n -\mu)\] = 0 $$
+$$ E\[(\bar{X}_n -\mu)^Tg^{\prime\prime}(\mu)(\bar{X}_n -\mu)\] = O(n^{-1}) $$
 Thus in this case the expansion $(2)$ is correct. 
 
 Let's further calculate the $b_{JACK}$ in this case. Aagain by Taylor expansion, we have 
@@ -42,11 +38,9 @@ T\_{n-1, i} - T\_n = g^{\prime}(\bar{X}\_n)(\bar{X}\_{n-1,i} - \bar{X}\_n) + \fr
 \end{equation}
 
 Then 
-$$
-\begin{aligned} b\_{JACK} &= (n - 1)(\bar{T}\_{n-1} - T\_n) \\\\\
+$$\begin{aligned} b\_{JACK} &= (n - 1)(\bar{T}\_{n-1} - T\_n) \\\\\
 &= \frac{n-1}{2n}\sum\_{i=1}^n (\bar{X}\_{n-1,i} - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(\bar{X}_{n-1,i} - \bar{X}_n) \\\\\
-&= \frac{1}{2n(n-1)}\sum\_{i=1}^n (X_i - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(X_i - \bar{X}_n) \end{aligned}
-$$
+&= \frac{1}{2n(n-1)}\sum\_{i=1}^n (X_i - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(X_i - \bar{X}_n) \end{aligned}$$
 
 where $\bar{X}\_{n-1,i}$ is the mean value of $n-1$ observations without the ith one. Since 
 $\xi\_i \rightarrow \mu $ as $n \rightarrow \infty$, we can show that $b\_{JACK} \rightarrow E\[(\bar{X}_n -\mu)^Tg^{\prime\prime}(\mu)(\bar{X}_n -\mu)\]$. By $E\[g^{\prime}(\mu) (\bar{X}_n -\mu)\] = 0$, we actually prove that the jackknife bias estimator is a consistent estimator of the first two order of the true bias. 
@@ -89,14 +83,12 @@ Now let's consider the property (B). The relevant result was first obtained by E
 T\_n = \alpha^{(0)} + \frac{1}{n}\sum_{i} \alpha_i^{(1)} + \frac{1}{n^2} \sum_{i\_1 < i\_2} \alpha\_{i\_1i\_2}^{(2)} + \cdots + \frac{1}{n^n} \alpha_{12\cdots n}^{(n)} 
 \end{equation}  
 where 
-$$
-\begin{aligned} \alpha^{(0)} &= ET\_n \\\\\
+$$\begin{aligned} \alpha^{(0)} &= ET\_n \\\\\
 \alpha_{i}^{(1)} &= n\[E(T\_n|X\_i) - \mu\] \\\\\
 \alpha_{i\_1i\_2}^{(2)} &= n^2\[E(T\_n|X\_{i\_1}, X\_{i\_2}) - E(T\_n|X\_{i\_1}) - E(T\_n|X\_{i\_2}) + \mu\] \\\\\
 &\cdots \\\\\
 \alpha_{i\_1i\_2\cdots i\_k}^{(k)} &= n^k\[E(T\_n|X\_{i\_1}, X\_{i\_2}, \cdots, X\_{i\_k}) -  \sum_{s=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s}) + \\\\\
-&\ \ \sum_{s,t=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s,t}) + \cdots + (-1)^k\mu \end{aligned}
-$$
+&\ \ \sum_{s,t=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s,t}) + \cdots + (-1)^k\mu \end{aligned}$$
 and these terms have zero expectation and mutually uncorrelated. This decomposition is powerful since it doesn't assume independence on the original observations. Intuitively, it decomposes an estimator into the main effect, mutual effect and high order effect of observations. One just need to plug in the definition of $\alpha^{(i)}$ into the decomposition to verfify it. Notice that if we assume our observations are i.i.d., we have
 \begin{equation}
 var(T\_{n-1}) = \frac{1}{n-1}\sigma^2\_1 + {n-1 \choose 2}\frac{1}{(n-1)^4}\sigma^2\_2 + \cdots + \frac{1}{n^{2n}}\sigma_n^2
