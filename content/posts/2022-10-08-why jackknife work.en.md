@@ -38,8 +38,8 @@ T\_{n-1, i} - T\_n = g^{\prime}(\bar{X}\_n)(\bar{X}\_{n-1,i} - \bar{X}\_n) + \fr
 \end{equation}
 
 Then 
-$$ b\_{JACK} = (n - 1)(\bar{T}\_{n-1} - T\_n) = \frac{n-1}{2n}\sum\_{i=1}^n (\bar{X}\_{n-1,i} - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(\bar{X}_{n-1,i} - \bar{X}_n) \\\\\
-= \frac{1}{2n(n-1)}\sum\_{i=1}^n (X_i - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(X_i - \bar{X}_n) $$
+$$ b\_{JACK} = (n - 1)(\bar{T}\_{n-1} - T\_n) = \frac{n-1}{2n}\sum\_{i=1}^n (\bar{X}\_{n-1,i} - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(\bar{X}_{n-1,i} - \bar{X}_n) $$
+$$ = \frac{1}{2n(n-1)}\sum\_{i=1}^n (X_i - \bar{X}\_n)^Tg^{\prime\prime}(\xi\_i)(X_i - \bar{X}_n) $$
 
 where $\bar{X}\_{n-1,i}$ is the mean value of $n-1$ observations without the ith one. Since 
 $\xi\_i \rightarrow \mu $ as $n \rightarrow \infty$, we can show that $b\_{JACK} \rightarrow E\[(\bar{X}_n -\mu)^Tg^{\prime\prime}(\mu)(\bar{X}_n -\mu)\]$. By $E\[g^{\prime}(\mu) (\bar{X}_n -\mu)\] = 0$, we actually prove that the jackknife bias estimator is a consistent estimator of the first two order of the true bias. 
@@ -82,12 +82,12 @@ Now let's consider the property (B). The relevant result was first obtained by E
 T\_n = \alpha^{(0)} + \frac{1}{n}\sum_{i} \alpha_i^{(1)} + \frac{1}{n^2} \sum_{i\_1 < i\_2} \alpha\_{i\_1i\_2}^{(2)} + \cdots + \frac{1}{n^n} \alpha_{12\cdots n}^{(n)} 
 \end{equation}  
 where 
-$$\alpha^{(0)} = ET\_n \\\\\
-\alpha_{i}^{(1)} = n\[E(T\_n|X\_i) - \mu\] \\\\\
-\alpha_{i\_1i\_2}^{(2)} = n^2\[E(T\_n|X\_{i\_1}, X\_{i\_2}) - E(T\_n|X\_{i\_1}) - E(T\_n|X\_{i\_2}) + \mu\] \\\\\
-\cdots \\\\\
-\alpha_{i\_1i\_2\cdots i\_k}^{(k)} = n^k\[E(T\_n|X\_{i\_1}, X\_{i\_2}, \cdots, X\_{i\_k}) -  \sum_{s=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s}) + \\\\\
-\ \ \sum_{s,t=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s,t}) + \cdots + (-1)^k\mu $$
+$$\alpha^{(0)} = ET\_n $$
+$$\alpha_{i}^{(1)} = n\[E(T\_n|X\_i) - \mu\] $$
+$$\alpha_{i\_1i\_2}^{(2)} = n^2\[E(T\_n|X\_{i\_1}, X\_{i\_2}) - E(T\_n|X\_{i\_1}) - E(T\_n|X\_{i\_2}) + \mu\] $$
+$$\cdots $$
+$$\alpha_{i\_1i\_2\cdots i\_k}^{(k)} = n^k\[E(T\_n|X\_{i\_1}, X\_{i\_2}, \cdots, X\_{i\_k}) -  \sum_{s=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s}) + $$
+$$\ \ \sum_{s,t=1}^k E(T\_n|(X\_{i\_j})\_{j\neq s,t}) + \cdots + (-1)^k\mu $$
 and these terms have zero expectation and mutually uncorrelated. This decomposition is powerful since it doesn't assume independence on the original observations. Intuitively, it decomposes an estimator into the main effect, mutual effect and high order effect of observations. One just need to plug in the definition of $\alpha^{(i)}$ into the decomposition to verfify it. Notice that if we assume our observations are i.i.d., we have
 \begin{equation}
 var(T\_{n-1}) = \frac{1}{n-1}\sigma^2\_1 + {n-1 \choose 2}\frac{1}{(n-1)^4}\sigma^2\_2 + \cdots + \frac{1}{n^{2n}}\sigma_n^2
